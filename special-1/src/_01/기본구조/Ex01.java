@@ -6,5 +6,10 @@ package _01.기본구조;
  * - main 메소드가 프로그램의 시작점(entry point)
  */
 public class Ex01 {
-    
+    // main
+    public static void main(String[] args) {
+      // sysout
+      System.out.println("자바 프로그램 구조");
+      System.out.println("main() 메소드가 프로그램의 시작점입니다.");
+    }
 }
