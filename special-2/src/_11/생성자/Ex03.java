@@ -5,15 +5,18 @@ class Pizza {
     String topping;
 
     Pizza() { // 기본 생성자
-       
+       this.dough = "기본도우";
+       this.topping = "치즈";
     }
 
     Pizza(String topping) { // 토핑만 지정하는 생성자
-        
+        this.dough = "기본도우";
+        this.topping = topping;
     }
 
     Pizza(String dough, String topping) { // 도우와 토핑을 모두 지정하는 생성자
-       
+       this.dough = dough;
+        this.topping = topping;
     }
 
     void printInfo() {

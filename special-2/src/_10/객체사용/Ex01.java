@@ -1,15 +1,27 @@
 package _10.객체사용;
 
 class Account {
-    String owner;
-    int balance;
+    String owner;       // 예금주
+    int balance;        // 잔액
 
+    // 입금
     void deposit(int amount) {
-
+        // balance = balance + amount;
+        balance += amount;
+        // 복합 대입 연산자 : A += B    --->  A = A + B
+        System.out.println(amount + "원 입금. 현재 잔액 : " + balance + "원");
     }
 
+    // 출금
     void withdraw(int amount) {
-        
+        // 출금액이 잔액보다 크다
+        if( amount > balance ) {
+            System.out.println("잔액이 부족합니다.");    
+            return;         // 1. 메소드 종료  2. 값을 호출한 자리로 반환
+        }
+        // balance = balance - amount;
+        balance -= amount;
+        System.out.println(amount + "원 출금. 현재 잔액 : " + balance + "원");
     }
 }
 

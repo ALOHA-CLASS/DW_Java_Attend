@@ -6,7 +6,8 @@ class Member {
 
     Member(String name, int age) {
         // this.필드 = 매개변수: 필드명과 매개변수명이 같을 때 구분하기 위해 사용
-        
+        this.name = name;
+        this.age = age;
     }
 
     void introduce() {

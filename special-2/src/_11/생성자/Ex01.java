@@ -3,8 +3,15 @@ package _11.생성자;
 class Book {
     String title;
     int price;
-
+    
     // 매개변수를 받는 생성자: 객체 생성과 동시에 필드 초기화
+    // ctrl + .
+    public Book(String title, int price) {
+        // this : 현재 객체를 가리키를 키워드
+        this.title = title;
+        this.price = price;
+    }
+    
     
 }
 
