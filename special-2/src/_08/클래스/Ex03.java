@@ -1,10 +1,10 @@
 package _08.클래스;
 
 class Box {
-    // 기본값 0
-    // 기본값 0.0
-    // 기본값 false
-    // 기본값 null
+    int number;         // 기본값 0
+    double price;       // 기본값 0.0
+    boolean isEmpty;    // 기본값 false
+    String label;       // 기본값 null
 }
 
 public class Ex03 {
